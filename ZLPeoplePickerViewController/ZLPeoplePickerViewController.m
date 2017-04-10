@@ -203,6 +203,7 @@
 
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)aSearchBar {
     [aSearchBar setShowsCancelButton:YES animated:YES];
+    [searchBar setValue:@"Done" forKey:@"_cancelButtonText"];
 }
 
 - (void)searchBarTextDidEndEditing:(UISearchBar *)aSearchBar {
